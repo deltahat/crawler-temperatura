@@ -6,14 +6,11 @@ import requests
 import time
 import os
 
-#Bucle infinito
-#while True:
-
 # Captura de url
 url = "http://www.timeanddate.com/weather/argentina/cordoba"
 
 # Captura de hml y creacion de un objeto Response
-r  = requests.get(url)
+r = requests.get(url)
 data = r.text
 
 # Creacion del objeto soup y envio de lo acpturado
